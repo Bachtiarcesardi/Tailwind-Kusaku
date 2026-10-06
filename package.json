@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "concurrently \"browser-sync start --server dist --files dist --port 3000\" \"npx @tailwindcss/cli -i src/input.css -o dist/assets/css/output.css --watch\"",
+    "build": "npx @tailwindcss/cli -i src/input.css -o dist/assets/css/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.9.2",
+    "@iconify-json/material-symbols": "^1.2.93",
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5",
+    "prettier": "^3.9.8",
+    "prettier-plugin-tailwindcss": "^0.8.1"
+  }
+}

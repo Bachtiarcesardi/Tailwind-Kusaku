@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "@egoist/tailwindcss-icons";
+@utility container {
+    center: true;
+}
+@theme {
+    --text-icon-sm: 20px;
+    --text-icon-md: 24px;
+    --text-icon-lg: 28px;
+    --text-icon-xl: 32px;
+
+    --color-brands-dark-green: #118871;
+    --color-brands-light-green: #15AB8E;
+
+    --font-sans: "Inter", sans-serif;
+    --font-brand: "Red Rose", serif;
+
+    --animate-slide-top: slide-top .5s cubic-bezier(.57,.14,0,1.07) both;
+    --animate-slide-bottom: slide-bottom 1s cubic-bezier(.57,.14,0,1.07) both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
